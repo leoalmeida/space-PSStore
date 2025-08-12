@@ -1,0 +1,15 @@
+<a href="#" class="card__container">
+    <img
+		class="card__img"
+		[src]=[game.gameCover]
+		alt=""
+		srcset=""
+	>
+	<app-card-label
+		[gameLabel]="game.gameLabel">
+	</app-card-label>
+	<app-card-pricing
+		[gameType]="game.gameType"
+		[gamePrice]="game.gamePrice">
+	</app-card-pricing>
+</a>

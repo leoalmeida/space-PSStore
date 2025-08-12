@@ -1,0 +1,8 @@
+<div class="home__container">
+    @for(game of filteredGamesList(); track game.id){
+        <app-gamecard [game]="game"></app-gamecard>
+    }
+    @empty {
+        <div class="not-found">Nenhum game disponível</div>
+    }
+</div>
